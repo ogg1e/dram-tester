@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name arduino_nano)(type Legacy)(uri ${KIPRJMOD}/library/arduino_nano.lib)(options "")(descr ""))
+)

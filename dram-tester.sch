@@ -1,0 +1,274 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L arduino_nano:Arduino_Nano A1
+U 1 1 5F3D7234
+P 2000 2600
+F 0 "A1" H 2025 4043 60  0000 C CNN
+F 1 "Arduino_Nano" H 2025 3937 60  0000 C CNN
+F 2 "arduino:arduino_nano" H 2025 3831 60  0000 C CNN
+F 3 "" H 2000 2600 60  0000 C CNN
+	1    2000 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x08_Counter_Clockwise J1
+U 1 1 5F3DB3B1
+P 3700 2550
+F 0 "J1" V 3796 2062 50  0000 R CNN
+F 1 "Zif Socket" V 3705 2062 50  0000 R CNN
+F 2 "arduino:DIP_Socket-16_W4.3_W5.08_W7.62_W10.16_W10.9_3M_216-3340-00-0602J" H 3700 2550 50  0001 C CNN
+F 3 "~" H 3700 2550 50  0001 C CNN
+	1    3700 2550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3400 2750 3400 2950
+Wire Wire Line
+	3400 2950 2700 2950
+Wire Wire Line
+	3500 2750 3500 3050
+Wire Wire Line
+	3500 3050 2700 3050
+Wire Wire Line
+	3600 2750 3600 3150
+Wire Wire Line
+	3600 3150 2700 3150
+Wire Wire Line
+	3700 2750 3700 3250
+Wire Wire Line
+	3700 3250 2700 3250
+Wire Wire Line
+	3800 2750 3800 3350
+Wire Wire Line
+	3800 3350 2700 3350
+Wire Wire Line
+	3900 2750 3900 3450
+Wire Wire Line
+	3900 3450 2700 3450
+Wire Wire Line
+	4000 2750 4000 3000
+Wire Wire Line
+	4000 3000 4300 3000
+Wire Wire Line
+	4300 3000 4300 1750
+Wire Wire Line
+	4300 1750 2700 1750
+Wire Wire Line
+	4100 2750 4100 3950
+Wire Wire Line
+	4100 3950 3650 3950
+Wire Wire Line
+	1000 3950 1000 2050
+Wire Wire Line
+	1000 2050 1350 2050
+Wire Wire Line
+	4100 2250 4100 1800
+Wire Wire Line
+	4100 1800 2700 1800
+Wire Wire Line
+	2700 1800 2700 1850
+Wire Wire Line
+	4000 2250 4000 1850
+Wire Wire Line
+	4000 1850 2800 1850
+Wire Wire Line
+	2800 1850 2800 1950
+Wire Wire Line
+	2800 1950 2700 1950
+Wire Wire Line
+	3900 2250 3900 1900
+Wire Wire Line
+	3900 1900 2850 1900
+Wire Wire Line
+	2850 1900 2850 2050
+Wire Wire Line
+	2850 2050 2700 2050
+Wire Wire Line
+	3800 2250 3800 1950
+Wire Wire Line
+	3800 1950 2900 1950
+Wire Wire Line
+	2900 1950 2900 2150
+Wire Wire Line
+	2900 2150 2700 2150
+Wire Wire Line
+	3700 2250 3700 2000
+Wire Wire Line
+	3700 2000 2950 2000
+Wire Wire Line
+	2950 2000 2950 2250
+Wire Wire Line
+	2950 2250 2700 2250
+Wire Wire Line
+	3600 2250 3600 2050
+Wire Wire Line
+	3600 2050 3000 2050
+Wire Wire Line
+	3000 2050 3000 2350
+Wire Wire Line
+	3000 2350 2700 2350
+Wire Wire Line
+	3500 2250 3500 2100
+Wire Wire Line
+	3500 2100 3050 2100
+Wire Wire Line
+	3050 2100 3050 2450
+Wire Wire Line
+	3050 2450 2700 2450
+Wire Wire Line
+	3400 2250 3400 1300
+Wire Wire Line
+	3400 1300 1200 1300
+Wire Wire Line
+	1200 1300 1200 3500
+Wire Wire Line
+	1200 3500 1350 3500
+$Comp
+L Device:R_US R1
+U 1 1 5F41F515
+P 2850 4100
+F 0 "R1" H 2918 4146 50  0000 L CNN
+F 1 "1K" H 2918 4055 50  0000 L CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 2890 4090 50  0001 C CNN
+F 3 "~" H 2850 4100 50  0001 C CNN
+	1    2850 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R2
+U 1 1 5F41FD67
+P 3250 4100
+F 0 "R2" H 3318 4146 50  0000 L CNN
+F 1 "470" H 3318 4055 50  0000 L CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3290 4090 50  0001 C CNN
+F 3 "~" H 3250 4100 50  0001 C CNN
+	1    3250 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 4250 2850 4350
+Connection ~ 2850 3950
+Wire Wire Line
+	2850 3950 1000 3950
+Wire Wire Line
+	3250 4250 3250 4350
+Connection ~ 3250 3950
+Wire Wire Line
+	3250 3950 2850 3950
+Connection ~ 3650 3950
+Wire Wire Line
+	3650 3950 3250 3950
+$Comp
+L Device:R_US R3
+U 1 1 5F4204DE
+P 3650 4100
+F 0 "R3" H 3718 4146 50  0000 L CNN
+F 1 "470" H 3718 4055 50  0000 L CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3690 4090 50  0001 C CNN
+F 3 "~" H 3650 4100 50  0001 C CNN
+	1    3650 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 4250 3650 4350
+$Comp
+L Device:LED D1
+U 1 1 5F43C806
+P 3000 3700
+F 0 "D1" H 2993 3916 50  0000 C CNN
+F 1 "Bad" H 2993 3825 50  0000 C CNN
+F 2 "LEDs:LED_D5.0mm" H 3000 3700 50  0001 C CNN
+F 3 "~" H 3000 3700 50  0001 C CNN
+	1    3000 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 5F43D47D
+P 3700 3700
+F 0 "D2" H 3693 3916 50  0000 C CNN
+F 1 "Good" H 3693 3825 50  0000 C CNN
+F 2 "LEDs:LED_D5.0mm" H 3700 3700 50  0001 C CNN
+F 3 "~" H 3700 3700 50  0001 C CNN
+	1    3700 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 3700 2850 2650
+Wire Wire Line
+	2700 2550 2750 2550
+Wire Wire Line
+	2750 2550 2750 4200
+Wire Wire Line
+	2750 4350 2850 4350
+Wire Wire Line
+	2850 2650 2700 2650
+Wire Wire Line
+	3550 3700 3300 3700
+Wire Wire Line
+	3300 3700 3300 2750
+Wire Wire Line
+	3300 2750 2700 2750
+Wire Wire Line
+	3150 3700 3150 4350
+Wire Wire Line
+	3150 4350 3250 4350
+Wire Wire Line
+	3850 3700 3850 4350
+Wire Wire Line
+	3850 4350 3650 4350
+$Comp
+L Device:Jumper_NO_Small JP1
+U 1 1 5F44E223
+P 2150 4200
+F 0 "JP1" H 2150 4293 50  0000 C CNN
+F 1 "on=4164,off=41256" H 2150 4294 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 2150 4200 50  0001 C CNN
+F 3 "~" H 2150 4200 50  0001 C CNN
+	1    2150 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 4200 1200 4200
+Wire Wire Line
+	1200 4200 1200 3500
+Connection ~ 1200 3500
+Wire Wire Line
+	2250 4200 2750 4200
+Connection ~ 2750 4200
+Wire Wire Line
+	2750 4200 2750 4350
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5F4559B5
+P 700 3150
+F 0 "SW1" V 746 3102 50  0000 R CNN
+F 1 "Reset" V 655 3102 50  0000 R CNN
+F 2 "Buttons_Switches_THT:SW_PUSH_6mm" H 700 3350 50  0001 C CNN
+F 3 "" H 700 3350 50  0001 C CNN
+	1    700  3150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	700  2950 700  2850
+Wire Wire Line
+	700  2850 1350 2850
+Wire Wire Line
+	700  3350 700  3500
+Wire Wire Line
+	700  3500 1200 3500
+$EndSCHEMATC
