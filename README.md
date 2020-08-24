@@ -1,4 +1,4 @@
-# 41256 and 4164 dram-tester Using Arduino Nano
+# 41256 and 4164 dram-tester using Arduino Nano
 
 UNTESTED!! Initial revision. 
 
