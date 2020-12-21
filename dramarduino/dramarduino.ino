@@ -1,3 +1,4 @@
+/* ================================================================== */
 #include <SoftwareSerial.h>
 
 #define DI          15  // PC1
@@ -25,6 +26,7 @@
 
 #define BUS_SIZE     9
 
+/* ================================================================== */
 volatile int bus_size;
 
 //SoftwareSerial USB(RXD, TXD);
@@ -36,7 +38,7 @@ const unsigned int a_bus[BUS_SIZE] = {
 void setBus(unsigned int a) {
   int i;
   for (i = 0; i < BUS_SIZE; i++) {
-    digitalWrite(a_bus[i], a % 1);
+    digitalWrite(a_bus[i], a & 1);
     a /= 2;
   }
 }
@@ -120,7 +122,7 @@ void green(int v) {
 
 void fill(int v) {
   int r, c, g = 0;
-  v %= 1;
+  v &= 1;
   for (c = 0; c < (1<<bus_size); c++) {
     green(g? HIGH : LOW);
     for (r = 0; r < (1<<bus_size); r++) {
@@ -135,7 +137,7 @@ void fill(int v) {
 
 void fillx(int v) {
   int r, c, g = 0;
-  v %= 1;
+  v &= 1;
   for (c = 0; c < (1<<bus_size); c++) {
     green(g? HIGH : LOW);
     for (r = 0; r < (1<<bus_size); r++) {
@@ -210,5 +212,3 @@ void loop() {
   interrupts(); Serial.print("."); Serial.flush(); noInterrupts(); fill(1);
   ok();
 }
-
-
